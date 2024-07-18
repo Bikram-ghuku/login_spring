@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RestController
 public class HomeController {
     
-    @GetMapping("/")
+    @GetMapping("/home")
     public String getHome(@RequestParam String param) {
-        return new String("Lol");
+        return "Lol";
     }
 
     @GetMapping("/secured")
     public String getMethodName(@RequestParam String param) {
-        return new String("Secured Route");
+        return "Secured Route";
     }
     
     
